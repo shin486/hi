@@ -203,7 +203,12 @@
             </div>
         </div>
       <button onclick="document.getElementById('loveSong').play()">Play Song</button>
-<audio id="loveSong" src="love-song.mp3"></audio>
+<audio id="loveSong" autoplay>
+    <source src="love-song.mp3" type="audio/mpeg">
+    <source src="love-song.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+
 
     </div>
     <script>
